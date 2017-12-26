@@ -235,7 +235,7 @@ drawEllipse (EyesWidget w, enum EyesPart part,
       w->eyes.picture)
     {
       int n, i;
-      double hd, c, s, sx, sy;	//x, y, //,  px, py
+      double hd, c, s, sx, sy, x, y,  px, py ;
       XPointDouble *p;
 
       pos.x = pos.x + pos.width / 2.0;

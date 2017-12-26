@@ -224,7 +224,7 @@ drawEllipse(EyesWidget w, enum EyesPart part,
 						 part != PART_OUTLINE) &&
 	w->eyes.picture) {
 	int n, i;
-	double hd, c, s, sx, sy, x, y, px, py;
+	double hd, c, s, sx, sy;	//x, y,	//,  px, py
 	XPointDouble *p;
 
 	pos.x = pos.x + pos.width/2.0;
@@ -305,16 +305,19 @@ static TPoint computePupil (
     const TRectangle *screen)
 {
 	double	cx, cy;
-	double	dist;
-	double	angle;
+//	double	dist;
+//	double	angle;
 	double	dx, dy;
-	double	cosa, sina;
+//	double	cosa, sina;
 	TPoint	ret;
 
 	cx = EYE_X(num); dx = mouse.x - cx;
 	cy = EYE_Y(num); dy = mouse.y - cy;
 	if (dx == 0 && dy == 0);
 	else {
+			double	angle;
+			double	cosa, sina;
+			double	dist;
 		angle = atan2 ((double) dy, (double) dx);
 		cosa = cos (angle);
 		sina = sin (angle);
@@ -493,7 +496,7 @@ static void Resize (Widget gw)
     XGCValues	xgcv;
     Widget	parent;
     Display	*dpy = XtDisplay (w);
-    int		x, y;
+//    int		x, y;
 
     if (XtIsRealized (gw))
     {
@@ -510,6 +513,7 @@ static void Resize (Widget gw)
 	}
 #endif
     	if (w->eyes.shape_window) {
+			    int		x, y;
 	    w->eyes.shape_mask = XCreatePixmap (dpy, XtWindow (w),
 	    	    w->core.width, w->core.height, 1);
 	    if (!w->eyes.gc[PART_SHAPE])

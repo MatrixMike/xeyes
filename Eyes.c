@@ -39,6 +39,7 @@ from the X Consortium.
  * sudo apt-get install xutils-dev
  * automake
  * autoreconf
+ * ./configure 
  */
  
 #ifdef HAVE_CONFIG_H

@@ -34,6 +34,10 @@ from the X Consortium.
  * a widget which follows the mouse around
  */
 
+/*
+ *  sudo apt-get install libxmu-dev libxi-dev
+ */
+ 
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif

@@ -208,7 +208,7 @@ Initialize (Widget greq, Widget gnew, ArgList args, Cardinal * num_args)
       XQueryColor (XtDisplay (w), w->core.colormap, &c);
 
       rc.red = c.red;
-      rc.green = c.green;
+      rc.green = c.green / 2;
       rc.blue = c.blue;
       rc.alpha = -1;
       w->eyes.fill[i] = XRenderCreateSolidFill (XtDisplay (w), &rc);

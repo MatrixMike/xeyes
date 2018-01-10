@@ -35,8 +35,7 @@ from the X Consortium.
  */
 
 /*
- * sudo apt-get install libxmu-dev libxi-dev
- * sudo apt-get install xutils-dev
+ * sudo apt-get install libxmu-dev libxi-dev xutils-dev
  * automake
  * autoreconf
  * ./configure 

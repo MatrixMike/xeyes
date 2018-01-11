@@ -39,3 +39,7 @@ config.h
 config.log
 config.status
 stamp-h1
+
+xeyes
+xeyes.1
+

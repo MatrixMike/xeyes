@@ -8,3 +8,5 @@ see README for that repository
 something that helped was:
 sudo apt-get install haskell-platform 
 
+added 16/4/2019
+sudo apt install libxmu-dev
